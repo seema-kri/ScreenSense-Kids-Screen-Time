@@ -86,9 +86,8 @@ The dataset contains **9,668 records** of children's screen time behavior collec
 
 > 💡 **Bottom Line:** Nearly all children in this dataset are overexposed to screens. The problem is not a fringe issue — it is systemic, age-accelerated, and device-concentrated. Immediate intervention is warranted.
 
-### Dashboard Snapshot
-
-*(Add a screenshot of your Power BI dashboard here)*
+### Dashboard — Kids Screen Time Overview
+![Overview](Overview.png)
 
 ### Top 4 Findings at a Glance
 
@@ -132,6 +131,9 @@ The dataset contains **9,668 records** of children's screen time behavior collec
 
 **Explanation:** Smartphones combine portability, personal ownership, and always-on connectivity — making them harder to regulate than shared devices like TVs or tablets. Device preference shifts from shared (TV/tablet) to personal (smartphone) as children age, explaining why risk remains persistently high through the teen years.
 
+### Dashboard — Device & Activity Analysis
+![Device and Activity](Device%20&%20Activity.png)
+
 ---
 
 ### 🔍 Insight 4: Recreational Usage Dominates — Educational Use Is the Exception
@@ -145,7 +147,7 @@ The dataset contains **9,668 records** of children's screen time behavior collec
 | 14–16 | 21.31% | 78.69% |
 | 17–18 | 20.55% | 79.45% |
 
-**Explanation:** The 8–10 group is the **only age group** where educational usage dominates — likely due to parental supervision. From age 11 onwards, recreational usage takes over permanently. This transition window (ages 10–11) is the most critical point for behavioral intervention.
+**Explanation:** The 8–10 group is the **only age group** where educational usage naturally dominates — likely due to parental supervision. From age 11 onwards, recreational usage takes over permanently. This transition window (ages 10–11) is the most critical point for behavioral intervention.
 
 ---
 
@@ -154,6 +156,9 @@ The dataset contains **9,668 records** of children's screen time behavior collec
 **Data Proof:** Urban high-risk rate = 85.9% (5,851 of 6,810). Rural high-risk rate = 85.4% (2,441 of 2,858).
 
 **Explanation:** Urban children account for 70% of the dataset volume, but the *risk rate* is nearly identical across both settings. Rural children face the same behavioral risk profile — they are simply underrepresented in the data, not safer.
+
+### Dashboard — User Segments & Behavior Patterns
+![Segmentation](Segmentation.png)
 
 ---
 
@@ -171,50 +176,56 @@ The dataset contains **9,668 records** of children's screen time behavior collec
 
 **Explanation:** Poor sleep is nearly 3.5x more prevalent than the next health impact (eye strain). The 11–13 age group records the highest absolute count of poor sleep cases (665 children), suggesting late-night device use begins in early adolescence.
 
+### Dashboard — Health Impact Analysis
+![Health Impact](Health%20impact.png)
+
 ---
 
 ## 🔴 5. Recommendations
 
 > Ranked by **impact potential** and **feasibility of implementation.**
 
+### Dashboard — Key Insights & Recommendations
+![Insights](Insights.png)
+
 ---
 
 ### ✅ Rec 1: Deploy Smartphone-First Parental Controls (Highest Priority)
 
-**Target:** All age groups, especially 11–18
-**Action:** Partner with device manufacturers and telecom providers to build parent-managed screen time governors natively into smartphones
+**Target:** All age groups, especially 11–18  
+**Action:** Partner with device manufacturers and telecom providers to build parent-managed screen time governors natively into smartphones  
 **Why:** Smartphones drive 47% of total exposure and are the hardest to regulate without system-level controls. Voluntary compliance alone has clearly failed — 91.75% exceedance proves it.
 
 ---
 
 ### ✅ Rec 2: Protect the 8–10 Educational Window
 
-**Target:** Children aged 8–10 and their parents
-**Action:** Design app ecosystems and school tablet programs that default to educational content during this age window — before recreational habits solidify
+**Target:** Children aged 8–10 and their parents  
+**Action:** Design app ecosystems and school tablet programs that default to educational content during this age window — before recreational habits solidify  
 **Why:** This is the only cohort where educational usage naturally dominates (72.9%). Losing this window results in the permanent recreational shift visible from age 11 onward.
 
 ---
 
 ### ✅ Rec 3: Launch a Sleep-Focused "Screens Off" Campaign
 
-**Target:** All age groups
-**Action:** Introduce mandatory device-free hours before bedtime (e.g., 9 PM cutoff) enforced via smart home integrations and school wellness programs
+**Target:** All age groups  
+**Action:** Introduce mandatory device-free hours before bedtime (e.g., 9 PM cutoff) enforced via smart home integrations and school wellness programs  
 **Why:** Poor sleep is the #1 health consequence (2,260 cases). Sleep disruption compounds into academic, emotional, and physical health problems — the highest-leverage single intervention point.
 
 ---
 
 ### ✅ Rec 4: Equalize Rural Intervention Coverage
 
-**Target:** Rural schools and community centers
-**Action:** Extend digital wellness resources and monitoring tools equally to rural settings — not just urban centers
+**Target:** Rural schools and community centers  
+**Action:** Extend digital wellness resources and monitoring tools equally to rural settings — not just urban centers  
 **Why:** Rural children carry an 85.4% high-risk rate, nearly identical to urban peers, but are likely receiving disproportionately less institutional support.
 
 ---
 
 ### ✅ Rec 5: Add Screen Time as a Standard School Health Metric
 
-**Target:** Schools and policymakers
-**Action:** Integrate screen time tracking into annual student health assessments alongside BMI and vision checks
+**Target:** Schools and policymakers  
+**Action:** Integrate screen time tracking into annual student health assessments alongside BMI and vision checks  
 **Why:** 85.77% of children qualify as high-risk, yet no standardized school-level monitoring exists. This institutional blind spot needs closing.
 
 ---
@@ -241,17 +252,37 @@ The dataset contains **9,668 records** of children's screen time behavior collec
 | **Python** (Pandas, Seaborn, Matplotlib) | Data cleaning, EDA, statistical analysis |
 | **Jupyter Notebook** | Analysis environment |
 | **Microsoft Power BI** | Interactive 4-page dashboard + insights summary |
-| **Excel** | Raw dataset storage |
+| **Excel / CSV** | Raw dataset storage |
+
+---
+
+## 📁 Repository Structure
+
+```
+ScreenSense-Kids-Screen-Time/
+│
+├── 📓 Data_Analysis.ipynb          # Jupyter Notebook — full EDA & analysis
+├── 📊 Dashboard.pbix               # Interactive Power BI Dashboard
+├── 📄 Dashboard.pdf                # Static PDF export of dashboard
+├── 📁 Dataset.xlsx                 # Raw dataset (Excel)
+├── 📁 Indian_Kids_Screen_Time.csv  # Raw dataset (CSV)
+├── 🖼️ Overview.png                 # Dashboard Page 1 screenshot
+├── 🖼️ Device & Activity.png        # Dashboard Page 2 screenshot
+├── 🖼️ Health impact.png            # Dashboard Page 3 screenshot
+├── 🖼️ Segmentation.png             # Dashboard Page 4 screenshot
+├── 🖼️ Insights.png                 # Dashboard Page 5 screenshot
+└── 📝 README.md                    # Project documentation
+```
 
 ---
 
 ## 👤 Author
 
-**[Seema Kumari]**
+**Seema**  
 Aspiring Data Analyst | Internship Project
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/seema-kumari-375763308/)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)](https://github.com/seema-kri)
+[![GitHub](https://img.shields.io/badge/GitHub-seema--kri-black?logo=github)](https://github.com/seema-kri)
 
 ---
 
